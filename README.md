@@ -6,6 +6,10 @@
 
 - ^3.11
 
+## Settings
+
+put your settings in `settings.py`. Only two variables are required.
+
 ## Usage
 
 Choose one of [Poetry](https://python-poetry.org/) or [pip](https://pip.pypa.io/en/stable/) to install the required packages. Poetry is recommended.

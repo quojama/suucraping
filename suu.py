@@ -7,13 +7,15 @@ import requests
 from bs4 import BeautifulSoup
 from retry import retry
 
+import settings
+
 # 複数ページの情報をまとめて取得
 data_samples = []
 
 # スクレイピングするページ数 (テストのために5にしているがフルで取得する場合は2000にする)
-max_page = 5
+max_page = settings.Max_Pages
 # 文京区、2Kから3LDK、10-20万、フローリング、2階以上でフィルタリングしたページ
-url = 'https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13105&cb=10.0&ct=20.0&et=9999999&md=06&md=07&md=08&md=09&md=10&cn=9999999&mb=0&mt=9999999&kz=1&kz=2&kz=4&tc=0400101&tc=0400503&shkr1=03&shkr2=03&shkr3=03&shkr4=03&fw2=&page={}'
+url = settings.Base_URL + "&page={}"
 
 # リクエストがうまく行かないパターンを回避するためのやり直し
 @retry(tries=3, delay=10, backoff=2)
