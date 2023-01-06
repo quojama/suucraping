@@ -1,3 +1,4 @@
 .venv
 nohup.out
 result.csv
+__pycache__
