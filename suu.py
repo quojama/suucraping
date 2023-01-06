@@ -112,4 +112,5 @@ finish = time.time()
 running_all = finish - start
 print('総経過時間：',running_all)
 
+# result.csvでルートディレクトリへ書き出す
 pd.DataFrame(data_samples).to_csv('result.csv', index=False, header=False)
