@@ -8,7 +8,12 @@
 
 ## Settings
 
-put your settings in `settings.py`. Only two variables are required.
+put your settings in `settings.py`. Only two variables are required!
+
+```python
+Base_URL = "https://suumo.jp/jj/chintai/ichiran/~"
+Max_Pages = 5
+```
 
 ## Usage
 
