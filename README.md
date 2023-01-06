@@ -1,16 +1,16 @@
 ## Reference
 
-[SUUMOの物件情報を自動取得（スクレイピング）したのでコードを解説する。 \- Qiita](https://qiita.com/tomyu/items/a08d3180b7cbe63667c9)
-
-## Requirements
-
-[Poetry \- Python dependency management and packaging made easy](https://python-poetry.org/)
+- [SUUMOの物件情報を自動取得（スクレイピング）したのでコードを解説する。 \- Qiita](https://qiita.com/tomyu/items/a08d3180b7cbe63667c9)
 
 ## Python Version
 
 - ^3.11
 
 ## Usage
+
+Choose one of [Poetry](https://python-poetry.org/) or [pip](https://pip.pypa.io/en/stable/) to install the required packages. Poetry is recommended.
+
+### Using Poetry
 
 ```bash
 $ poetry install
@@ -25,17 +25,15 @@ $ poetry install
 $ poetry run python suu.py
 ```
 
-### Background process option
+### Using pip
 
 ```bash
-$ poetry install
-$ poetry shell
-$ nohup python suu.py &
+$ pip install -r requirements.txt
+$ python suu.py
 ```
 
-or
+## Background process option
 
 ```bash
-$ poetry install
-$ poetry run nohup python suu.py &
+$ nohup python suu.py &
 ```
