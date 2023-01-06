@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "suucraping"
+version = "0.1.0"
+description = "suumo scraping"
+authors = ["quojama"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.28.1"
+retry = "^0.9.2"
+bs4 = "^0.0.1"
+numpy = "^1.24.1"
+pandas = "^1.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
