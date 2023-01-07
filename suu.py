@@ -12,9 +12,8 @@ import settings
 # 複数ページの情報をまとめて取得
 data_samples = []
 
-# スクレイピングするページ数 (テストのために5にしているがフルで取得する場合は2000にする)
+# settings.pyから設定を読み込む
 max_page = settings.Max_Pages
-# 文京区、2Kから3LDK、10-20万、フローリング、2階以上でフィルタリングしたページ
 url = settings.Base_URL + "&page={}"
 
 # リクエストがうまく行かないパターンを回避するためのやり直し
